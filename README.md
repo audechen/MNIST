@@ -30,40 +30,6 @@ python softmax_regression.py
 python convolutional.py
 ```
 
-#### 可能出现的错误
-
-下载数据集时可能出现网络问题，可以用下面两种方法中的一种解决：
-- 使用合适的代理
-- 在MNIST的官方网站上下载文件
-train-images-idx3-ubyte.gz
-train-labels-idx1-ubyte.gz
-t10k-images-idx3-ubyte.gz
-t10k-labels-idx1-ubyte.gz
-并将它们存储在MNIST_data/文件夹中。
-
-
-#### 拓展阅读
-
-- MNIST 数据集经常被用来检验机器学习模型的性能，在它的官网（地址：http://yann.lecun.com/exdb/mnist/ ）中，可以找到多达68 种模型在该数据集上的准确率数据，包括相应的论文出处。这些模型包括线性分类器、K 近邻方法、普通的神经网络、卷积神经网络等。
-- 两个MNIST 程序实际上来自于TensorFlow 官方的两个新手教程，地址为
-https://www.tensorflow.org/get_started/mnist/beginners
-https://www.tensorflow.org/get_started/mnist/pros
-这两个新手教程的中文版地址为
-http://www.tensorfly.cn/tfdoc/tutorials/mnist_beginners.html
-http://www.tensorfly.cn/tfdoc/tutorials/mnist_pros.html。
-- tf.Tensor 类是TensorFlow的核心类，常用的占位符（tf.placeholder）、变量（tf.Variable）都可以看作特殊的Tensor。
-可以参阅
-https://www.tensorflow.org/programmers_guide/tensors 
-来更深入地学习它的原理。
-- 常用tf.Variable 类来存储模型的参数，可以参阅
-https://www.tensorflow.org/programmers_guide/variables
-详细了解它的运行机制
-文档的中文版地址
-http://www.tensorfly.cn/tfdoc/how_tos/ variables.html。
-- 只有通过会话（Session）才能计算出tf.Tensor 的值。
-https://www.tensorflow.org/programmers_guide/graphs
-描述了TensorFlow 中 计算图和会话的基本运行原理，对理解TensorFlow 的底层原理有很大帮助。
-
 #### 运行结果
 
 - step 0, training accuracy 0.06
